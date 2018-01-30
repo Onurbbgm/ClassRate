@@ -1,0 +1,104 @@
+nav{
+	text-align: right;
+}
+
+nav ul{
+	display: inline;
+
+}
+
+nav li{
+	margin: 0;
+    padding: 0 10px;
+	display: inline;
+	color: orange;
+}
+*{
+	font-family: font-family: Palatino, 'Palatino Liontype', Serif;
+}
+
+
+
+body{
+	background-color: Tomato;
+}
+.uni{
+    width: 50%;
+    text-align: center;
+    /*padding-left: 315px;*/
+    display: inline-block;
+}
+.botoes{
+	text-align: center;
+	margin-top: 5px;
+	border-bottom-color: yellow;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+input[type=email], input[type=password], input[type=text] {
+    width: 50%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#classLogo{
+	width: 10%;
+	min-width: 10%;
+}
+
+.logo{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	text-align: center;
+	margin: auto;
+}
+label{
+	text-align: center;
+}
+.forms{
+	text-align: center;
+
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 0px;
+    text-align: center;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+/*
+*{
+  border: 4px solid rgba(0,0,0,0.3);
+}*\

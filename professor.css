@@ -1,0 +1,57 @@
+nav{
+	margin: 0;
+	padding: 0;
+	/*background-color: #333;*/
+}
+
+ul{
+	display: inline-block;
+
+
+}
+.right{
+	float: right;
+	display: inline;
+	
+	
+}
+.left{
+	float: left;
+	display: inline;
+	width: 50%;
+	margin: auto;
+
+}
+
+table{
+	border: 4px solid rgba(0,0,0.7,0.3);
+}
+
+li{
+	margin: 0;
+    padding: 0 5px;
+	display: inline;
+	color: black;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+#classLogo{
+	width: 5%;
+	height: 5%;
+	min-width: 5%;
+	min-height: 5%;
+	text-align: right;
+	display: inline;
+	
+}
+
+*{
+	font-family: font-family: Palatino, 'Palatino Liontype', Serif;
+}
+
+
+
+body{
+	background-color: Tomato;
+}

@@ -1,0 +1,53 @@
+*{
+	font-family: font-family: Palatino, 'Palatino Liontype', Serif;
+}
+
+
+
+body{
+	background-color: Tomato;
+}
+
+nav{
+	text-align: right;
+}
+
+nav ul{
+	display: inline;
+
+}
+
+nav li{
+	margin: 0;
+    padding: 0 10px;
+	display: inline;
+	color: orange;
+}
+
+.forms{
+    padding: 0px;
+    text-align: center;
+}
+input{
+	padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+form{
+	display: inline-block;
+}
+.comAva{
+	text-align: center;
+}
+
+.textbox {
+
+height: 200px; 
+
+width:300px;
+font-size: 14px;
+
+text-align: top;
+}

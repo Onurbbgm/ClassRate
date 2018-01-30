@@ -1,0 +1,66 @@
+
+/*coment*/
+h1{
+	font-size: 48px;
+	color: AliceBlue;
+	text-align: center;
+	font-family: Palatino, 'Palatino Liontype', serif;
+}
+
+h2{
+	color: AliceBlue;
+	font-family: Palatino, 'Palatino Liontype', serif;
+}
+
+*{
+	font-family: font-family: Palatino, 'Palatino Liontype', Serif;
+}
+
+
+
+body{
+	background-color: Tomato;
+}
+
+nav{
+	text-align: right;
+}
+
+nav ul{
+	display: inline;
+}
+
+nav li{
+	margin: 0;
+    padding: 0 10px;
+	display: inline;
+	color: orange;
+}
+
+.main{
+	text-align: center;
+
+}
+
+.search-box{
+	text-align: center;
+}
+
+#classLogo{
+	width: 20%;
+}
+
+.titulo{
+	text-align: center;
+}
+
+input[type=text]{
+	width: 50%;
+	border: 2px red;
+	border-radius: 5px;
+	border-width: 30px;
+	height: 16px;
+	background-color: SlateBlue;
+	color: white;
+	margin-top: 5px;
+}

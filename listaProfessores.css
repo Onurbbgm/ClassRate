@@ -1,0 +1,57 @@
+nav{
+	margin: 0;
+	padding: 0;
+	
+}
+
+ul{
+	display: inline-block;
+
+
+}
+.right{
+	float: right;
+	display: inline;
+	
+	
+}
+.left{
+	float: left;
+	display: inline;
+	width: 50%;
+	margin: auto;
+
+}
+
+
+
+
+li{
+	margin: 0;
+    padding: 0 5px;
+	display: inline;
+	color: black;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+*{
+	font-family: font-family: Palatino, 'Palatino Liontype', Serif;
+}
+
+
+
+body{
+	background-color: Tomato;
+}
+
+#classLogo{
+	width: 5%;
+	height: 5%;
+	min-width: 5%;
+	min-height: 5%;
+	text-align: right;
+	display: inline;
+}
+
+
