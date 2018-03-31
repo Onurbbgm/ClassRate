@@ -48,32 +48,33 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 <html>
 <head>
 	<title>Resultados</title>
-	<link rel="stylesheet" type="text/css" href="listaProfessores.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 	<div class="navegador">
 		<nav>
-			<ul>				
-				<div class="left">
-					<li ><a href="index.php"><img id="classLogo" src="logo3.png"></a></li>
-				</div>
-				<div class="right">
-					<li><a href="index.php"><b>Home</b></a></li>
-					<?php 
-						if ($codUser==""||$codUser=="0") {
-					?>
-						<li><a href='cadastro.php'><b>Cadastro</b></a></li>
-						<li><a href='login.php'><b>Login</b></a></li>
-						<?php
-					}
-						else{
-							?>
-							<li><a href='usuario.php'><b><?php echo "$nomeUser";?></b></a></li>
-							<li><a href="logout.php"><b>Sair</b></a></li>
-							<?php
-						}
-					?>
-				</div>
+			<ul>
+				<li><a href="index.php"><b>Home</b></a></li>
+				<?php 
+                        if ($codUser==""||$codUser=="0") {
+                    ?>
+                        <li><a href='login.php'><b>Login</b></a></li>
+                        <li class="menu-destaque"><a href='cadastro.php'><b>Cadastro</b></a></li>
+                        <?php
+                    }
+                        else{
+                            ?>
+                            <li><a href='usuario.php'><b><?php echo "$nomeUser";?></b></a></li>
+                            <li><a href="logout.php"><b>Sair</b></a></li>
+                            <?php
+                        }
+                    ?>
 			</ul>
 		</nav>
 	</div>

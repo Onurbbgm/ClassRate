@@ -35,7 +35,13 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
 	<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -72,32 +78,7 @@
                 });
             });
 	</script>
-   <!-- <style >
-    	
-        .tt-hint{
-            border: 2px solid #CCCCCC;
-            border-radius: 8px 8px 8px 8px;
-            font-size: 24px;
-            height: 45px;
-            line-height: 30px;
-            outline: medium none;
-            padding: 8px 12px;
-            width: 400px;
-        }
-    	.tt-dropdown-menu {
-            width: 400px;
-            margin-top: 5px;
-            padding: 8px 12px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-            border-radius: 8px 8px 8px 8px;
-            font-size: 18px;
-            color: #111;
-            background-color: #F1F1F1;
-        }
-
-    </style>
+   <!-- 
     <script>
     	$(document).ready(function(){
     		$('input.search').typeahead({
@@ -139,8 +120,8 @@
 				<?php 
                         if ($codUser==""||$codUser=="0") {
                     ?>
-                        <li><a href='cadastro.php'><b>Cadastro</b></a></li>
                         <li><a href='login.php'><b>Login</b></a></li>
+                        <li class="menu-destaque"><a href='cadastro.php'><b>Cadastro</b></a></li>
                         <?php
                     }
                         else{
@@ -153,6 +134,7 @@
 			</ul>
 		</nav>
 	</div>
+    <!--
 	<div class="titulo">
 		<img id="classLogo" src="logo3.png">
 	</div>
@@ -162,9 +144,42 @@
 		</form>
 	</div>
 	<div class="main">
-		<p>Esse site tem o objetivo de ajudar estudantes a achar um bom professor, avaliando seus professores.</p>
+		<p>Esse site tem o laobjetivo de ajudar estudantes a achar um bom professor, avaliando seus professores.</p>
 	</div>
-	<!--<script>confirm('This is an example of using JS to create some interaction on a website. Click OK to continue!');</script> -->
+	<script>confirm('This is an example of using JS to create some interaction on a website. Click OK to continue!');</script> -->
+
+      <div class='search'>
+
+<!--
+    <div class="titulo">
+        <img id="classLogo" src="logo3.png">
+    </div>
+-->  
+        <div class="main">
+            <p>ClassRate</p>
+        </div>
+        <div class='search_bar'>
+            <form autocomplete="off" action="listaProfessores.php" method="get">
+              <input id='searchOne' type='checkbox'>
+              <label for='searchOne'>
+                <i class='icon ion-android-search'></i>
+                <i class='last icon ion-android-close'></i>
+                <p>|</p>
+              </label>
+              <input type="text" name="search" id ="search" placeholder="Buscar Professor"/>
+            </form>
+        </div>
+        <div class="main">
+            <p>Busque e Avalie professores</p>
+        </div>
+
+      </div>
+
+
+
+    <footer>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@zal3wa?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Damian Zaleski"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Damian Zaleski</span></a>
+    </footer>
 
 </body>
 

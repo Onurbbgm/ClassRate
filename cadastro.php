@@ -25,37 +25,38 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 <html>
 <head>
 	<title>Class Rate Cadastro</title>
-	<link rel="stylesheet" type="text/css" href="cadastro.css"/>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="../dist/js/standalone/selectize.js"></script>
 	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 	<div class="navegador">
 		<nav>
 			<ul>
 				<li><a href="index.php"><b>Home</b></a></li>
-				<li class="cadastro"><a href='cadastro.php'><b>Cadastro</b></a></li>
 				<li><a href='login.php'><b>Login</b></a></li>
+                <li class="menu-destaque"><a href='cadastro.php'><b>Cadastro</b></a></li>
 			</ul>
 		</nav>
 	</div>
-	<div class="logo">
-		<img id="classLogo" src="logo3.png">
-	</div>
-	<div class="container">		
-		<form action="cadastroAction.php" method="post">
-			<label><b>Nome:</b></label>
+	<div class="forms">		
+		<form class="login_form" action="cadastroAction.php" method="post">
 			<div>
-				<input type="text" placeholder="Nome Competo" id = "nome" name="nome" required>				
+				<input type="text" placeholder="Nome Completo" id="nome" name="nome" required>				
 			</div>
-			<label><b>Email:</b></label>
 			<div>
-				<input type="email" placeholder="Email" id = "email "name="email_n" required>
+				<input type="email" placeholder="E-mail" id = "email "name="email_n" required>
 			</div>
-			<label><b>Confirmar Email:</b></label>
 			<div>
-				<input type="email" placeholder="Confirmar Email" id="confirmar_email" name="confirmar_email" required>		
+				<input type="email" placeholder="Confirmar E-mail" id="confirmar_email" name="confirmar_email" required>	
 			</div>
 			<div>
 				<label><b>Universidade:</b></label>
@@ -90,7 +91,7 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 			<div>
 				<label><b>Curso:</b></label>
 			</div>
-			<div>
+			<div class="cur">
 				<select name="curso" id="selectCur" class="selects" placeholder="Selecione Curso" required>
 			<?php
 				if(mysqli_num_rows($search_sqlC)!=0){
@@ -115,18 +116,15 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 				</script>
 				<!-- <input type="text" placeholder="Curso" id="curso" name="curso" required> -->
 			</div>
-			<label><b>Senha:</b></label>
 			<div>
 				<input type="password" placeholder="Senha" id="password" name="pass" required>
 			</div>
-			<label><b>Confirmar Senha:</b></label>
 			<div>
 				<input type="password" placeholder="Confirmar Senha" id="confirmar_pass" name="con_pass" required>
 			</div>
-			<input type="checkbox"> Ao apertar na caixa voce confirma que leu e conconrda com os <a href="#">Termos e Condicoes</a>.
+			<input class="termos-texto" type="checkbox">Ao apertar na caixa você confirma que leu e conconrda com os <a class="termos" href="#">Termos e Condições</a>.
 			<div class="botoes">
 				<button name = "sub" id = "sub" type="submit" class="signupbtn">Confirmar</button>
-				<button name = "cancel" id = "cancel" type="submit" class="cancelbtn">Cancelar</button>
 			</div>
 		</form>
 		

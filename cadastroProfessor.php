@@ -31,10 +31,17 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 <html>
 <head>
 	<title>Cadastro Professor</title>
-	<link rel="stylesheet" type="text/css" href="cadastroProfessor.css"/>
 	<script src="js/jquery.min.js"></script>
 	<script src="../dist/js/standalone/selectize.js"></script>
 	<script src="js/index.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
 
@@ -45,8 +52,8 @@ define('DB_PASSWORD', 'vB42lL&69_r');
 				<?php 
 						if ($codUser==""||$codUser=="0") {
 					?>
-						<li><a href='cadastro.php'><b>Cadastro</b></a></li>
-						<li><a href='login.php'><b>Login</b></a></li>
+                        <li><a href='login.php'><b>Login</b></a></li>
+                        <li class="menu-destaque"><a href='cadastro.php'><b>Cadastro</b></a></li>
 						<?php
 					}
 						else{
